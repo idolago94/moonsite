@@ -48,10 +48,10 @@ class LoginScreen extends Component {
   }
 
   async componentDidMount() {
-    // let loginData = JSON.parse(await AsyncStorage.getItem('auth'));
-    // if (loginData) {
-    //   this.props.autoLogin(loginData);
-    // }
+    let loginData = JSON.parse(await AsyncStorage.getItem('auth'));
+    if (loginData) {
+      this.props.autoLogin(loginData);
+    }
   }
 
   async componentDidUpdate(prevProps, prevState) {
