@@ -6,12 +6,13 @@ class ItemsStore {
   shoes = [];
 
   fetchItems() {
+      console.log('fetch items...');
     fetch('http://www.mocky.io/v2/5e3940013200005e00ddf87e')
       .then(res => res.json())
       .then(response => {
-        this.shirts = response.filter(item => item.type == 'shirt');
-        this.pants = response.filter(item => item.type == 'pants');
-        this.shoes = response.filter(item => item.type == 'shoes');
+        this.shirts = response.results.filter(item => item.type == 'shirt').sort((a, b) => a.name.localeCompare(b.name));
+        this.pants = response.results.filter(item => item.type == 'pants').sort((a, b) => a.name.localeCompare(b.name));
+        this.shoes = response.results.filter(item => item.type == 'shoes').sort((a, b) => a.name.localeCompare(b.name));
       });
   }
 }
