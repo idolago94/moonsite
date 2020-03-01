@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, FlatList} from 'react-native';
 
 export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{fontSize: 20}}>Home Screen</Text>
+        <Text style={styles.title}>Dress App</Text>
       </View>
     );
   }
@@ -14,5 +14,10 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 70,
+    padding: 20,
   },
 });
