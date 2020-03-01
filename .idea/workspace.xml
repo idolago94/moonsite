@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fa47a1-bea8-4c53-9825-ce874f77cd0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/LoginScreen.js" afterDir="false" />
-    </list>
+    <list default="true" id="58fa47a1-bea8-4c53-9825-ce874f77cd0e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582788271676</updated>
       <workItem from="1582788273917" duration="321000" />
+      <workItem from="1582792033649" duration="18000" />
     </task>
     <servers />
   </component>
@@ -64,7 +63,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
